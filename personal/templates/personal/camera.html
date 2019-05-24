@@ -1,0 +1,28 @@
+{% extends "personal/header.html" %}
+{% block content %}
+{% load staticfiles %}
+<div class='row'>
+	<div class='col-sm-6'>
+		<center>
+			<p class="aligncenter text-light font-weight-bold">
+				<font size="6" color=#189be2 face='Times New Roman'>Camera</font>
+			</p>
+			<hr>
+			<img class="responsive-img" src="http://c19155:7777/stream.mjpg" style='width:70%; max-width:600px;heigh:auto; ' alt="Camera">
+		</center>
+	</div>
+	
+	<div class='col-sm-6'>
+		<center>
+			<p class="aligncenter text-light font-weight-bold">
+				<font size="6" color=#189be2 face='Times New Roman'>Result</font>
+			</p>
+			<hr>
+			<img class="responsive-img" src="http://c19155:7777/stream.mjpg" style='width:70%; max-width:600px;heigh:auto; ' alt="Camera">
+		</center>
+	</div>
+</div>
+<hr>
+<br>
+{% endblock %}
+	

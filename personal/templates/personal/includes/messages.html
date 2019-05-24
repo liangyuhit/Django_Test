@@ -1,0 +1,41 @@
+{% if messages %}
+	{% for message in messages %}
+		{% if message.tags == 'success'%}
+			<div id="myAlert" class="alert alert-success">
+				<center>
+					<a href="#" class="alert-heading close" data-dismiss="alert">&times;</a>
+					<strong><h3>Welcome!!!</h3></strong>
+					<hr>
+				</center>
+					<a href="#"></a> {{message|safe}}
+			</div>
+		{% elif message.tags == 'info'%}
+			<div id="myAlert" class="alert alert-info">
+				<center>
+					<a href="#" class="alert-heading close" data-dismiss="alert">&times;</a>
+					<strong><h2>Information</h2></strong>
+					<hr>
+				</center>
+					<a href="#" style="margin-left:auto"></a> {{message|safe}}
+			</div>	
+		{% elif message.tags == 'warning'%}
+			<div id="myAlert" class="alert alert-warning">
+				<center>
+					<a href="#" class="alert-heading close" data-dismiss="alert">&times;</a>
+					<strong><h2>Warning!!!</h2></strong>
+					<hr>
+				</center>
+					<a href="#" style="margin-left:auto"></a> {{message|safe}}
+			</div>
+		{% elif message.tags == 'error'%}
+			<div id="myAlert" class="alert alert-danger">
+				<center>
+					<a href="#" class="alert-heading close" data-dismiss="alert">&times;</a>
+					<strong><h2>Error!!!</h2></strong>
+					<hr>
+				</center>
+					<a href="#" style="margin-left:auto"></a> {{message|safe}}
+			</div>
+		{% endif %}
+	{% endfor %}
+{% endif %}

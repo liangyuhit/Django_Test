@@ -1,0 +1,40 @@
+{% extends "personal/header.html" %}
+{% block content %}
+{% load staticfiles %}
+	<div class='row'>
+		<div class='col-sm-12'>
+		<center>
+		<p class="aligncenter text-light font-weight-bold">
+			<font size="5" color=#189be2 face='Times New Roman'>
+				Raspberry Pi C19155 @Bessel-Bau 303
+			</font>
+			<br>
+		</p>
+		</center>
+	</div>
+	</div>
+	<hr>
+
+	<div class='row'>
+		<div class='col-sm-6'>
+			<center>
+				<p class="aligncenter text-light font-weight-bold">
+					<font size="6" color=#189be2 face='Times New Roman'>3D Printer</font>
+				</p>
+				<img class="responsive-img" src="http://c19155:7777/stream.mjpg" style='width:90%; max-width:600px; heigh:auto; '>
+			</center>
+		</div>
+		<div class='col-sm-6'>
+			<center>
+				<p class="aligncenter text-light font-weight-bold">
+					<font size="6" color=#189be2 face='Times New Roman'>Temperature</font>
+				</p>
+				<img class="responsive-img" src="{% static 'personal/img/BME280.png' %}" style='width:90%; max-width:600px; heigh:auto; ' alt="CPU Temperature">
+			</center>
+		</div>
+	</div>
+	<hr>
+	
+{% endblock %}
+	
+			
